@@ -12,7 +12,7 @@ function addStyleResource(rule) {
 }
 
 module.exports = {
-    siteName: 'Gridsome',
+    siteName: 'Foundations Microgreens',
 
     // Get your files
     // you'll need another plugin object if you want to import a different folder
