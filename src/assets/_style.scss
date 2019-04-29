@@ -1,0 +1,42 @@
+/**
+    Theme Name: Hardroad Graphics Theme
+    Theme URI:
+    Author: Earl Manulabnan
+    Author URI:
+    Description: Theme for Hardroad Graphics Website
+    Version: 3.0
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Text Domain:
+    Tags:
+ **/
+ 
+// import normalize from http://github.com/necolas/normalize.css
+@import 'base/normalize';
+
+// import mixins
+@import 'base/mixins/breakpoints';
+@import 'base/mixins/mediaqueries';
+
+
+// import colors,typography, layout, spacing
+@import 'base/typography';
+@import 'base/color';
+// spacing has been moved to np design system
+//@import 'base/spacing';
+@import 'base/layout';
+@import 'base/components';
+
+// // import main elements defined in 'layouts'
+// @import 'header';
+// // @import 'main'; //not technically necessary
+// @import 'footer';
+
+// // import page styles
+// @import 'products/product-info';
+// @import 'products/we-require1';
+// @import 'products/we-require2';
+// @import 'products/we-recommend';
+// @import 'products/we-do-not-accept';
+
+// @import 'index';
