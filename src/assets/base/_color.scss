@@ -1,19 +1,33 @@
 // Colors
 
 /* Define Global Variables */
-:root {
 
-    // Colors
-    --primary: #661422;
-    --light-shade: #F4F4F2;
-    --dark-shade: #1B1B24;
-    --light-accent: #CA955D;
-    --dark-accent: #787E98;
-    --text-dark: #39394D;
-    --text-primary: #591F29;
+// Main
+$color-primary: #2b7f38;
+$color-accent-light: #AACCAF;
+$color-accent-dark: #212822;
 
-    // Opacity
-    --caption-o: .8;
-    --link-o: .9;
-}
+// Text
+$color-heading: #212822;
+$color-body: #0E110E;
+$color-caption: #48644C;
+
+// Opacity
+$opacity-semi: .8;
+
+// :root {
+
+//     // Colors
+//     --primary: #661422;
+//     --light-shade: #F4F4F2;
+//     --dark-shade: #1B1B24;
+//     --light-accent: #CA955D;
+//     --dark-accent: #787E98;
+//     --text-dark: #39394D;
+//     --text-primary: #591F29;
+
+//     // Opacity
+//     --caption-o: .8;
+//     --link-o: .9;
+// }
 

@@ -48,8 +48,13 @@ export default {
 };
 </script>
 
-<style>
+<style <style lang="scss">
+
 .home-links a {
 	margin-right: 1rem;
 }
+
+body {
+}
+
 </style>
