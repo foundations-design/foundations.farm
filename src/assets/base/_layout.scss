@@ -1,6 +1,8 @@
 :root {
+// this stuff will go into np design system
+
   /* Grid proportions */
-  --grid-width: 960;
+  --grid-width: 1200;
   --grid-column-width: 60;
   --grid-columns: 12;
 
@@ -48,69 +50,22 @@
 }
 
 // Base grid goes here
+
+
+$column-layout: 1fr [c] var(--container-width) 1fr; // Use this within sections to define columns
+
 body {
-    display: grid; // This grid is for the rows
-    --column-layout: 1fr [c] var(--container-width) 1fr; // Use this within sections to define columns
-    
-    // * ONLY USE html5 SEMANTIC ELEMENTS HERE: https://www.w3schools.com/html/html5_semantic_elements.asp
-    grid-template-areas:
-        "header"
-        "main"
-        "footer"; 
+    display: grid; // This grid is for the rows   
 }
 
-header {
-    grid-area: header;
+header, main, footer {
     display: grid;
-    grid-template-columns: var(--column-layout); // Use our defined columns
-    & > * { // place our content in the middle
-        grid-column: c
-    }
-
-}
-
-// I'M A BEAST.. we want to apply full-width backgrounds to children of main 
-// so I just moved the grid one section down :D
-main > * {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: var(--column-layout);
+    grid-template-columns: $column-layout;
     & > * {
         grid-column: c
     }
 }
 
-footer {
-    grid-area: footer;
-
-    display: grid;
-    grid-template-columns: var(--column-layout);
-    & > * {
-        grid-column: c
-    }
+.layout {
+    display: contents;
 }
-
-// I'll keep the keep the verbosity for now for the sake of clarity
-// but in the future we can do this in a lot less lines:
-
-// body {
-//     display: grid; // This grid is for the rows
-//     --column-layout: 1fr [c] var(--container-width) 1fr; // Use this within sections to define columns
-//     grid-template-areas:
-//         "header"
-//         "main"
-//         "footer"; // ! ONLY USE html5 SEMANTIC ELEMENTS HERE: https://www.w3schools.com/html/html5_semantic_elements.asp
-
-        // main {grid-area: main}
-        // body {grid-area: body}
-        // footer {grid-area: footer}
-// }
-
-// header, main, footer {
-//     display: grid;
-//     grid-template-columns: var(--column-layout);
-//     & > * {
-//         grid-column: c
-//     }
-// }
-
