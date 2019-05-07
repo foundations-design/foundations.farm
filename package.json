@@ -14,7 +14,7 @@
     },
     "devDependencies": {
         "node-sass": "^4.11.0",
-        "np-design-system": "^0.1.1-a",
+        "np-design-system": "^0.1.2",
         "sass-loader": "^7.1.0",
         "style-resources-loader": "^1.2.1"
     }
