@@ -1,4 +1,16 @@
-.photo {
-    box-shadow: -8px 8px 0px var(--color-accent-light);
-    border-radius: 3px;   
+img {
+    // causes images to have more predictable behavior
+    max-width: 100%;
 }
+
+.photo {
+    border-radius: 3px;
+
+    img {
+        box-shadow: -8px 8px 0px var(--color-accent-light);
+        background-color: var(--color-accent-light);
+
+        border-radius: 3px;
+    }
+}
+

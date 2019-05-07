@@ -1,15 +1,21 @@
 <template>
 	<Layout>
 		<!-- Learn how to use images here: https://gridsome.org/docs/images -->
-		<g-image src="~/assets/img/logo_full.png" width="400"/>
+		<g-image class="logo-full" src="~/assets/img/logo_full.png" width="600"/>
 		<h3>
 			Foundations is a local indoor farm that aims to
 			<br>provide fresh and local nutrients to the Tri Cities area.
 		</h3>
-		<div class="gal">
-			<g-image class="photo" src="~/assets/img/harvest-1.png"/>
-			<g-image class="photo" src="~/assets/img/harvest-2.png"/>
-			<g-image class="photo" src="~/assets/img/harvest-3.png"/>
+        <div class="gal">
+			<div class="photo">
+				<g-image src="~/assets/img/harvest-1.png"/>
+			</div>
+			<div class="photo">
+				<g-image src="~/assets/img/harvest-2.png"/>
+			</div>
+			<div class="photo">
+				<g-image src="~/assets/img/harvest-3.png"/>
+			</div>
 		</div>
 
 		<g-link class="button">Learn More</g-link>
@@ -52,10 +58,18 @@ export default {
 </script>
 
 <style lang="scss">
-
-.gal {
-    display: flex;
-    
+.logo-full {
+    width: column-spans(5);
 }
 
+.gal {
+	display: flex;
+    justify-content: space-between;
+    margin-bottom: $space-xxl;
+
+	.photo {
+        flex: 1 1 auto;
+        @include space-inline($space-xxl);
+	}
+}
 </style>
