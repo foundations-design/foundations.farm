@@ -10,11 +10,11 @@
     "dependencies": {
         "@gridsome/source-filesystem": "^0.3.0",
         "@gridsome/transformer-remark": "^0.2.1",
-        "gridsome": "^0.5.8",
-        "np-design-system": "^0.1.0"
+        "gridsome": "^0.5.8"
     },
     "devDependencies": {
         "node-sass": "^4.11.0",
+        "np-design-system": "^0.1.1-a",
         "sass-loader": "^7.1.0",
         "style-resources-loader": "^1.2.1"
     }
