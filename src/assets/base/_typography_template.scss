@@ -5,73 +5,56 @@ Typography
 
 based on https://github.com/CodyHouse/codyhouse-framework
 -------------------------------- */
-
-
-
-
-:root {
-
     
     /*----------  1) Import fonts and set primary/secondary font  ----------*/
 
     @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,500');
     @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,600');
-    --font-primary: 'IBM Plex Serif', serif;
-    --font-secondary: 'IBM Plex Mono', monospace;
+    $font-primary: 'IBM Plex Serif', serif;
+    $font-secondary: 'IBM Plex Mono', monospace;
 
     /*----------  2) Choose base font size and line height  ----------*/
-    --base-font-size: 16px;
-    --heading-line-height: 1.2;
-    --body-line-height: 1.4;
+    $base-font-size: 16px;
+    $heading-line-height: 1.2;
+    $body-line-height: 1.4;
+
+
+// Apply base font size and font
+
+html {
+    font-size: $base-font-size;
+    font-family: $font-primary;
 }
 
-@include breakpoint(md) {
-    :root {
-        --text-base-size: 1.25em;
-        --text-scale-ratio: 1.25;
-    }
-}
 
-// text formatting (including color defaults)
-body {
-    font-size: 10px;
-    font-family: var(--font-primary);
-    color: var(--text-dark);
-}
 
 h1, h2, h3, h4, form legend {
-    color: var(--color-text-heading);
     line-height: var(--heading-line-height);
     margin: 0;
 }
 
 h1 {
-    font-size: var(--text-xl);
-    text-transform: uppercase;
-    color: var(--primary);
-    font-weight: bold;
+    font-size: $size-xxxxl;
 }
 
 h2 {
-    font-size: var(--text-lg)
-}
-
-h1:before, h2:before{
-    content: "\25a0   ";
-    margin-right: var(--space-xs);
-    margin-left: -1.45em;
+    font-size: $size-xxxl;
 }
 
 h3 {
-    font-size: var(--text-md);
-    font-weight: 300;
-    font-style: italic;
+    font-size: $size-xxl;
 }
 
 h4 {
-    font-size: 1em;
-    font-style: italic;
-    font-weight: 300;
+    font-size: $size-xl;
+}
+
+h5 {
+    font-size: $size-l;
+}
+
+h6 {
+    font-size: $size-l;
 }
 
 a {
@@ -86,7 +69,7 @@ a {
 }
 
 p {
-    line-height: var(--body-line-height);
+    line-height: $body-line-height;
 }
 
 b, strong {
@@ -155,7 +138,7 @@ b, strong {
     }
 
     ul li, ol li {
-        line-height: var(--body-line-height);
+        line-height: $body-line-height;
     }
     
     em {

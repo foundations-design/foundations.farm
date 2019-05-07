@@ -34,26 +34,27 @@ h1, h2, h3, h4, form legend {
 }
 
 h1 {
-    //font-size: var(--text-xl);
-
-    font-size: $size-xxl;
-    font-weight: bold;
+    font-size: $size-xxxxl;
 }
 
 h2 {
-    font-size: var(--text-lg)
+    font-size: $size-xxxl;
 }
 
 h3 {
-    font-size: var(--text-md);
-    font-weight: 300;
-    font-style: italic;
+    font-size: $size-xxl;
 }
 
 h4 {
-    font-size: 1em;
-    font-style: italic;
-    font-weight: 300;
+    font-size: $size-xl;
+}
+
+h5 {
+    font-size: $size-l;
+}
+
+h6 {
+    font-size: $size-l;
 }
 
 a {
