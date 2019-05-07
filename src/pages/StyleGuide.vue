@@ -55,7 +55,7 @@ body {
 }
 
 .section-title {
-	background-color: #a5adba;
+	background-color: var(--color-accent-light);
 }
 
 .color-box-container {
