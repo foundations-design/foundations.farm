@@ -1,7 +1,7 @@
 <template>
 	<Layout>
 		<!-- Learn how to use images here: https://gridsome.org/docs/images -->
-		<g-image src="https://via.placeholder.com/400x125"/>
+		<g-image src="~/assets/img/logo_full.png" width="400"/>
 		<h3>
 			Foundations is a local indoor farm that aims to provide
 			<wbr>fresh and local nutrients to the Tri Cities area.
