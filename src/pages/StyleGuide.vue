@@ -39,7 +39,7 @@
 			<h6>This is an h6 Heading</h6>
 
 			<p class="text-button">Button Text</p>
-			<p class="text-caption">This is the caption text 00</p>
+			<p class="text-caption">Caption Text</p>
 		</div>
 	</div>
 </template>
@@ -68,29 +68,28 @@ body {
 		margin: 1em;
 	}
 
-    .color-primary {
-    background-color: var(--color-primary)
-    }
+	.color-primary {
+		background-color: var(--color-primary);
+	}
 
-    .color-accent-light {
-        background-color: var(--color-accent-light)
-    }
+	.color-accent-light {
+		background-color: var(--color-accent-light);
+	}
 
-    .color-accent-dark {
-        background-color: var(--color-accent-dark)
-    }
+	.color-accent-dark {
+		background-color: var(--color-accent-dark);
+	}
 
-    .color-text-heading {
-        background-color: var(--color-text-heading)
-    }
+	.color-text-heading {
+		background-color: var(--color-text-heading);
+	}
 
-    .color-text-body {
-        background-color: var(--color-text-body)
-    }
+	.color-text-body {
+		background-color: var(--color-text-body);
+	}
 
-    .color-text-caption {
-        background-color: var(--color-text-caption)
-    }
+	.color-text-caption {
+		background-color: var(--color-text-caption);
+	}
 }
-
 </style>

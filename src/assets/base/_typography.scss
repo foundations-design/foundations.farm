@@ -98,7 +98,7 @@ p {
     font-weight: 500;
 }
 
-@mixin button {
+@mixin text-button {
     font-family: var(--font-secondary);
     color: var(--color-text-header);
     font-weight: 500;
@@ -107,11 +107,19 @@ p {
     text-transform: uppercase;
 }
 
-.text-caption {
+.text-button {
+    @include text-button;
+}
+
+@mixin text-caption {
     font-family: var(--font-secondary);
     color: var(--color-text-caption);
     font-weight: 600;
     font-size: $size-m;
+}
+
+.text-caption {
+    @include text-caption
 }
 
 /*=====  End of Website-Specific Styles ======*/
