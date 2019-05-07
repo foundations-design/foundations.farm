@@ -16,6 +16,9 @@
 			<h4>This is an h4 Heading</h4>
 			<h5>This is an h5 Heading</h5>
 			<h6>This is an h6 Heading</h6>
+
+			<p class="text-button">button text</p>
+			<p class="text-caption">This is the caption text 00</p>
 		</div>
 	</div>
 </template>
