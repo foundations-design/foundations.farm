@@ -28,9 +28,9 @@
 
     /*----------  3) Define colors (NOTE: These should eventually be moved to "colors" file)  ----------*/
 
-    --color-text-heading: #212822;
-    --color-text-body: #0E110E;
-    --color-text-caption: #0E110E;
+    // --color-text-heading: #212822;
+    // --color-text-body: #0E110E;
+    // --color-text-caption: #0E110E;
 
 }
 
@@ -44,8 +44,6 @@ html {
     color: var(--color-text-body);
 }
 
-
-
 h1, h2, h3, h4, h5, h6, form legend {
     line-height: var(--line-height-heading);
     margin: 0;
@@ -55,6 +53,7 @@ h1, h2, h3, h4, h5, h6, form legend {
 b, strong {
     font-weight: bold;
 }
+
 /*=====          End of Setup          ======*/
 
 
@@ -100,22 +99,19 @@ p {
 }
 
 button, .text-button, .allcaps {
-    font-family: IBM Plex Mono;
+    font-family: var(--font-secondary);
+    color: var(--color-text-header);
     font-weight: 500;
     font-size: $size-l;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: var(--color-text-body);
 }
 
 .text-caption {
-    font-family: IBM Plex Mono;
+    font-family: var(--font-secondary);
+    color: var(--color-text-caption);
     font-weight: 600;
     font-size: $size-m;
-    color: var(--color-text-body);
 }
 
 /*=====  End of Website-Specific Styles ======*/
