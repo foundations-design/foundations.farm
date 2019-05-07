@@ -98,7 +98,7 @@ p {
     font-weight: 500;
 }
 
-button, .text-button, .allcaps {
+@mixin button {
     font-family: var(--font-secondary);
     color: var(--color-text-header);
     font-weight: 500;
