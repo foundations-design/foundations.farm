@@ -15,11 +15,9 @@
 
 /*----------  1) Import fonts and set primary/secondary font  ----------*/
 
-// @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,500');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,500,600');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600');
-// $font-primary: 'IBM Plex Serif', serif;
-$font-primary: 'IBM Plex Sans', serif;
+$font-primary: 'IBM Plex Serif', serif;
 $font-secondary: 'IBM Plex Mono', monospace;
 
 /*----------  2) Choose base font size and line height  ----------*/
@@ -30,9 +28,9 @@ $line-height-body: 1.6;
 
 /*----------  3) Define colors (NOTE: These should eventually be moved to "colors" file)  ----------*/
 
-$color-text-heading: #444444;
-$color-text-body: #000000;
-$color-text-caption: #777777;
+$color-text-heading: #212822;
+$color-text-body: #0E110E;
+$color-text-caption: #0E110E;
 
 
 // Apply base font sizes and fonts
@@ -42,11 +40,14 @@ html {
     font-size: $size-base;
     font-family: $font-primary;
     line-height: $line-height-body;
+    color: $color-text-body;
 }
 
 h1, h2, h3, h4, h5, h6, form legend {
     line-height: $line-height-heading;
     margin: 0;
+    color: $color-text-heading;
+
 }
 
 /*=====          End of Setup          ======*/
@@ -85,8 +86,7 @@ h5 {
 
 h6 {
     font-size: $size-l;
-    font-weight: 500;
-    font-style: italic;
+    font-weight: 600;
 }
 
 
