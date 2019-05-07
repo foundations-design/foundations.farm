@@ -3,12 +3,15 @@
 		<!-- Learn how to use images here: https://gridsome.org/docs/images -->
 		<g-image src="~/assets/img/logo_full.png" width="400"/>
 		<h3>
-			Foundations is a local indoor farm that aims to<br> 
-            provide fresh and local nutrients to the Tri Cities area.
+			Foundations is a local indoor farm that aims to
+			<br>provide fresh and local nutrients to the Tri Cities area.
 		</h3>
-		<g-image class="photo" src="https://via.placeholder.com/250"/>
-		<g-image class="photo" src="https://via.placeholder.com/250"/>
-		<g-image class="photo" src="https://via.placeholder.com/250"/>
+		<div class="gal">
+			<g-image class="photo" src="~/assets/img/harvest-1.png"/>
+			<g-image class="photo" src="~/assets/img/harvest-2.png"/>
+			<g-image class="photo" src="~/assets/img/harvest-3.png"/>
+		</div>
+
 		<g-link class="button">Learn More</g-link>
 
 		<h3>Want to get notified of our next harvest?</h3>
@@ -49,4 +52,10 @@ export default {
 </script>
 
 <style lang="scss">
+
+.gal {
+    display: flex;
+    
+}
+
 </style>
