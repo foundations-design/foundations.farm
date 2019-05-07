@@ -1,61 +1,94 @@
-/* Typography */ 
-
-/* -------------------------------- 
-Typography
-
-based on https://github.com/CodyHouse/codyhouse-framework
--------------------------------- */
-    
-    /*----------  1) Import fonts and set primary/secondary font  ----------*/
-
-    @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,500');
-    @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,600');
-    $font-primary: 'IBM Plex Serif', serif;
-    $font-secondary: 'IBM Plex Mono', monospace;
-
-    /*----------  2) Choose base font size and line height  ----------*/
-    $base-font-size: 16px;
-    $heading-line-height: 1.2;
-    $body-line-height: 1.4;
+/**
+ *
+ * Typography
+ *
+ * based on https://github.com/CodyHouse/codyhouse-framework
+ *
+ */
 
 
-// Apply base font size and font
 
+/*=============================================
+=                    Setup                    =
+=============================================*/
+
+
+/*----------  1) Import fonts and set primary/secondary font  ----------*/
+
+// @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600');
+// $font-primary: 'IBM Plex Serif', serif;
+$font-primary: 'IBM Plex Sans', serif;
+$font-secondary: 'IBM Plex Mono', monospace;
+
+/*----------  2) Choose base font size and line height  ----------*/
+
+$size-base: 16px;
+$line-height-heading: 1.6;
+$line-height-body: 1.6;
+
+/*----------  3) Define colors (NOTE: These should eventually be moved to "colors" file)  ----------*/
+
+$color-text-heading: #444444;
+$color-text-body: #000000;
+$color-text-caption: #777777;
+
+
+// Apply base font sizes and fonts
+// Applies the base variables to the whole document
+// * You probably don't need to change this
 html {
-    font-size: $base-font-size;
+    font-size: $size-base;
     font-family: $font-primary;
+    line-height: $line-height-body;
 }
 
-
-
-h1, h2, h3, h4, form legend {
-    line-height: var(--heading-line-height);
+h1, h2, h3, h4, h5, h6, form legend {
+    line-height: $line-height-heading;
     margin: 0;
 }
 
+/*=====          End of Setup          ======*/
+
+
+
+/*=============================================
+=           Website-Specific Styles           =
+=============================================*/
+
+
 h1 {
     font-size: $size-xxxxl;
+    font-weight: 300;
 }
 
 h2 {
     font-size: $size-xxxl;
+    font-weight: 500;
 }
 
 h3 {
     font-size: $size-xxl;
+    font-weight: 500;
 }
 
 h4 {
     font-size: $size-xl;
+    font-weight: 500;
 }
 
 h5 {
     font-size: $size-l;
+    font-weight: 600;
 }
 
 h6 {
     font-size: $size-l;
+    font-weight: 500;
+    font-style: italic;
 }
+
 
 a {
     color: var(--text-dark);
@@ -68,13 +101,27 @@ a {
     }
 }
 
-p {
-    line-height: $body-line-height;
-}
 
 b, strong {
     font-weight: bold;
 }
+
+
+
+/*=====  End of Website-Specific Styles ======*/
+
+
+
+    
+
+
+
+
+
+
+
+
+
 
 /* text size classes */
 .caption {
