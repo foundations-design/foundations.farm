@@ -7,7 +7,7 @@
 			<nav class="nav">
 				<g-link class="nav__link" to="/">About Us</g-link>
 				<g-link class="nav__link" to="/about">Our Crops</g-link>
-				<g-link class="nav__link" to="/posts">Contact Us</g-link>
+				<g-link class="nav__link button" to="/posts">Contact Us</g-link>
 			</nav>
 		</header>
 		<main>
