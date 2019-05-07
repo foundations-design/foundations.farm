@@ -12,7 +12,7 @@
  **/
  
 // import normalize from http://github.com/necolas/normalize.css
-@import 'base/normalize';
+// @import 'base/normalize';
 
 // import mixins
 @import 'base/mixins/breakpoints';
@@ -22,16 +22,8 @@
 // import colors,typography, layout, spacing
 @import 'base/typography';
 @import 'base/color';
-// spacing has been moved to np design system
-//@import 'base/spacing';
+// spacing has been moved to np design system @import 'base/spacing';
 @import 'base/layout';
-@import 'base/components';
-
-// // import main elements defined in 'layouts'
-// @import 'header';
-// // @import 'main'; //not technically necessary
-// @import 'footer';
+@import 'components/button';
 
 
-
-// @import 'index';
