@@ -5,6 +5,8 @@ input[type="text"], input[type="email"] {
     box-shadow: -6px 4px 0px var(--color-accent-light);
     border-radius: 3px; 
 
-    line-height: 2rem;
-    padding: .2rem 1rem;
+    // line-height: 2rem;
+    // padding: .2rem 1rem;
+    
+    @include space-squish($space-m);
 }
