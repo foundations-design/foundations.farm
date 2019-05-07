@@ -1,3 +1,11 @@
-.button {
-    background-color: blue;
+button, input[type="submit"]  {
+    //@include space-squish($space-m);
+    border: 3px solid var(--color-accent-dark);
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.primary {
+
 }

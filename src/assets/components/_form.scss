@@ -1,8 +1,8 @@
 input[type="text"], input[type="email"] {
     background: rgba(251, 251, 248, 0.7);
-    border: 3px solid #212822;
+    border: 3px solid var(--color-accent-dark);
     box-sizing: border-box;
-    box-shadow: -6px 4px 0px #AACCAF;
+    box-shadow: -6px 4px 0px var(--color-accent-light);
     border-radius: 3px; 
 
     line-height: 2rem;
