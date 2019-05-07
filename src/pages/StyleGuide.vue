@@ -1,6 +1,6 @@
 <template>
 	<!-- Do not use vue-specific functionality here without an html-only backup -->
-	<div>
+	<div class="content">
 		<h1>Style Guide</h1>
 
 		<div class="typography">
@@ -15,5 +15,16 @@
 		</div>
 	</div>
 </template>
+
 <style lang="scss">
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1200px 1fr;
+        
+    }
+
+    .content {
+        grid-column: 2;
+    }
+
 </style>
