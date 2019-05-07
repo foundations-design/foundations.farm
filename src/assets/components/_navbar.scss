@@ -1,0 +1,5 @@
+nav {
+    a {
+        @include space-inline($space-xxl);
+    }
+}
