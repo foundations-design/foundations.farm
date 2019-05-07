@@ -1,9 +1,9 @@
 <template>
 	<div class="layout">
 		<header class="header">
-			<strong>
+			<!-- <strong>
 				<g-link to="/">{{ $static.metaData.siteName }}</g-link>
-			</strong>
+			</strong> -->
 			<nav class="nav">
 				<g-link class="nav__link" to="/">About Us</g-link>
 				<g-link class="nav__link" to="/about">Our Crops</g-link>

@@ -1,4 +1,7 @@
 nav {
+    text-align: right;
+    padding: $space-xxl 0;
+    
     a {
         @include space-inline($space-xxl);
     }
