@@ -6,10 +6,10 @@
 			Foundations is a local indoor farm that aims to provide
 			<wbr>fresh and local nutrients to the Tri Cities area.
 		</h3>
-		<g-image src="https://via.placeholder.com/250"/>
-		<g-image src="https://via.placeholder.com/250"/>
-		<g-image src="https://via.placeholder.com/250"/>
-		<g-link>Learn More</g-link>
+		<g-image class="photo" src="https://via.placeholder.com/250"/>
+		<g-image class="photo" src="https://via.placeholder.com/250"/>
+		<g-image class="photo" src="https://via.placeholder.com/250"/>
+		<g-link class="button">Learn More</g-link>
 
 		<h3>Want to get notified of our next harvest?</h3>
 		<p>We'll let you know when the next batch is ready for delivery!</p>
