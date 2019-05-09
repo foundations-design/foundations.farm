@@ -75,7 +75,7 @@ h2 {
 
 h3 {
     font-size: $size-xxl;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 h4 {
@@ -106,9 +106,9 @@ a {
 
 @mixin text-button {
     font-family: var(--font-secondary);
-    color: var(--color-text-header);
+    color: var(--color-text-heading);
     font-weight: 500;
-    font-size: $size-l;
+    font-size: $size-m;
     letter-spacing: 0.02em;
     text-transform: uppercase;
 }

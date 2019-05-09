@@ -14,16 +14,19 @@
 				<div class="gal">
 					<div class="photo">
 						<g-image src="~/assets/img/harvest-1.png"/>
+						<p class="text-caption">Harvested: January 16, 2019</p>
 					</div>
 					<div class="photo">
 						<g-image src="~/assets/img/harvest-2.png"/>
+						<p class="text-caption">Harvested: February 3, 2019</p>
 					</div>
 					<div class="photo">
 						<g-image src="~/assets/img/harvest-3.png"/>
+						<p class="text-caption">Harvested: Febuary 28, 2019</p>
 					</div>
 				</div>
 
-				<g-link class="button right">Learn More</g-link>
+				<g-link class="button right">Learn More >></g-link>
 			</section>
 			<section>
 				<h3>Want to get notified of our next harvest?</h3>
@@ -33,23 +36,23 @@
 				</form>
 			</section>
 			<section>
-				<h2>Got a Question?</h2>
+				<h3>Got a Question?</h3>
 				<form>
 					<div class="form-field">
 						<p class="input-title">Name</p>
-						<input type="text">
+						<input type="text" placeholder="Earl Santos">
 					</div>
 					<div class="form-field">
 						<p class="input-title">Email</p>
-						<input type="text">
+						<input type="text" placeholder="supercoolperson@email.com">
 					</div>
 					<div class="form-field">
 						<p class="input-title">Phone (optional)</p>
-						<input type="text">
+						<input type="text" placeholder="(630) 444 4444">
 					</div>
 					<div class="form-field">
 						<p class="input-title">Message</p>
-						<input type="text">
+						<input type="text" placeholder="Nice to meet you!">
 					</div>
 					<input type="submit">
 				</form>
@@ -87,7 +90,11 @@ section {
 
 	.photo {
 		flex: 1 1 auto;
-		@include space-inline($space-xxl);
+		@include space-inline(5rem);
+
+		img {
+			margin-bottom: $space-l;
+		}
 	}
 }
 
