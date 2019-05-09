@@ -46,7 +46,7 @@ html, * {
 
 h1, h2, h3, h4, h5, h6, form legend {
     line-height: var(--line-height-heading);
-    margin: 0;
+    margin: 0 0 $space-s;
     color: var(--color-text-heading);
 }
 
