@@ -1,13 +1,41 @@
-input[type="text"], input[type="email"] {
-    background: rgba(251, 251, 248, 0.7);
+
+input[type="text"], input[type="email"], textarea {
+    @include space-squish($space-m);
+    background: #E3EDE2;
     border: 3px solid var(--color-accent-dark);
     box-sizing: border-box;
-    box-shadow: -6px 4px 0px var(--color-accent-light);
+    box-shadow: -5px 4px 0px var(--color-accent-light);
     border-radius: 3px;
-    width: 400px;
+    min-width: 400px;
+    margin: $space-m 0 $space-xl;
+}
 
-    // line-height: 2rem;
-    // padding: .2rem 1rem;
-    
-    @include space-squish($space-m);
+form .input{
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: end;
+
+	p {
+		margin: 0;
+	}
+
+
+    textarea {
+        width: 100%;
+        //height: 100%;
+    }
+
+    div:nth-child(4) {
+        grid-row: 1/4;
+        height: 100%;
+
+    }
+}
+
+.email-form input {
+    @include space-inline($space-xl);
+
 }
