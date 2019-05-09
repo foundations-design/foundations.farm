@@ -31,30 +31,34 @@
 			<section>
 				<h3>Want to get notified of our next harvest?</h3>
 				<p>We'll let you know when the next batch is ready for delivery!</p>
-				<form>
+				<form class="email-form">
 					<input type="email" placeholder="myemailaddress@somewhere.com">
+					<input type="submit" class="button">
 				</form>
 			</section>
 			<section>
 				<h3>Got a Question?</h3>
 				<form>
-					<div class="form-field">
-						<p class="input-title">Name</p>
-						<input type="text" placeholder="Earl Santos">
+					<div class="input">
+						<div class="form-field">
+							<p class="input-title">Name</p>
+							<input type="text" placeholder="Earl Santos">
+						</div>
+						<div class="form-field">
+							<p class="input-title">Email</p>
+							<input type="text" placeholder="supercoolperson@email.com">
+						</div>
+						<div class="form-field">
+							<p class="input-title">Phone (optional)</p>
+							<input type="text" placeholder="(630) 444 4444">
+						</div>
+						<div class="form-field">
+							<p class="input-title">Message</p>
+							<textarea rows="14"></textarea>
+							<!-- <input type="text" class="input-large" placeholder="Nice to meet you!"> -->
+						</div>
 					</div>
-					<div class="form-field">
-						<p class="input-title">Email</p>
-						<input type="text" placeholder="supercoolperson@email.com">
-					</div>
-					<div class="form-field">
-						<p class="input-title">Phone (optional)</p>
-						<input type="text" placeholder="(630) 444 4444">
-					</div>
-					<div class="form-field">
-						<p class="input-title">Message</p>
-						<input type="text" placeholder="Nice to meet you!">
-					</div>
-					<input type="submit">
+					<input type="submit" class="button right">
 				</form>
 			</section>
 		</main>
@@ -103,12 +107,5 @@ section {
 }
 
 form {
-	p {
-		margin: 0;
-	}
-
-	input {
-		margin: $space-m 0 $space-xl;
-	}
 }
 </style>
