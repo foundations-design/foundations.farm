@@ -1,7 +1,6 @@
 <template>
 	<Layout>
 		<!-- Learn how to use images here: https://gridsome.org/docs/images -->
-		<main>
 			<section>
 				<g-image class="logo-full" src="~/assets/img/logo_full.png" width="600"/>
 				<h3 class="banner">
@@ -36,7 +35,7 @@
 					<input type="submit" class="button">
 				</form>
 			</section>
-			<section>
+			<section id="contact-form">
 				<h3>Got a Question?</h3>
 				<form>
 					<div class="input">
@@ -61,7 +60,6 @@
 					<input type="submit" class="button right">
 				</form>
 			</section>
-		</main>
 	</Layout>
 </template>
 
@@ -74,6 +72,9 @@ export default {
 </script>
 
 <style lang="scss">
+
+
+
 p {
 	margin-bottom: $space-xl;
 }

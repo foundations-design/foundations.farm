@@ -6,8 +6,9 @@
 			</strong>-->
 			<nav class="nav">
 				<g-link class="nav__link" to="/">About Us</g-link>
-				<g-link class="nav__link" to="/about">Our Crops</g-link>
-				<g-link class="nav__link button" to="/posts">Contact Us</g-link>
+				<g-link class="nav__link" to="/our-crops">Our Crops</g-link>
+				<!-- <a href="#contact-form" class="button">Contact Us</a> -->
+				<g-link to="/#contact-form" class="button">Contact Us</g-link>
 			</nav>
 		</header>
 		<main>
@@ -38,6 +39,13 @@ query {
 </static-query>
 
 <style lang="scss">
+main {
+	min-height: 90vh;
+	// this feels like bad practice...
+	display: flex;
+	flex-direction: column;
+}
+
 footer {
 	margin: $space-m 0;
 
