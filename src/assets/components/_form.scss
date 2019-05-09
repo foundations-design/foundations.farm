@@ -7,7 +7,6 @@ input[type="text"], input[type="email"], textarea {
     box-shadow: -5px 4px 0px var(--color-accent-light);
     border-radius: 3px;
     width: column-spans(5);
-    margin: $space-m 0 $space-xl;
 }
 
 form .input{
@@ -17,6 +16,11 @@ form .input{
     grid-template-columns: repeat(2, column-spans(6));
     grid-template-rows: 1fr 1fr 1fr;
     align-items: end;
+
+    input, textarea {
+        margin: $space-m 0 $space-xl;
+    }
+
 
 	p {
 		margin: 0;
@@ -35,7 +39,7 @@ form .input{
     }
 }
 
-.email-form input {
-    @include space-inline(column-spans(1));
-
+.email-form {
+    display: grid;
+    grid-template-columns: repeat(2, column-spans(6));
 }
