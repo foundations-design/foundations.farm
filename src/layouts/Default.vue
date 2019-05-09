@@ -3,7 +3,7 @@
 		<header class="header">
 			<!-- <strong>
 				<g-link to="/">{{ $static.metaData.siteName }}</g-link>
-			</strong> -->
+			</strong>-->
 			<nav class="nav">
 				<g-link class="nav__link" to="/">About Us</g-link>
 				<g-link class="nav__link" to="/about">Our Crops</g-link>
@@ -14,7 +14,7 @@
 			<slot/>
 		</main>
 		<footer>
-			<div>Copyright 2019.</div>
+			<small>Copyright 2019. foundations.dev</small>
 		</footer>
 	</div>
 </template>
@@ -38,4 +38,11 @@ query {
 </static-query>
 
 <style lang="scss">
+footer {
+	margin: $space-m 0;
+
+	small {
+		text-align: right;
+	}
+}
 </style>
