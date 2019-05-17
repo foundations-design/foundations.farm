@@ -63,45 +63,46 @@
 					<div class="form-field">
 						<p class="input-title">Message</p>
 						<textarea rows="14"></textarea>
-						<!-- <input type="text" class="input-large" placeholder="Nice to meet you!"> -->
 					</div>
 				</div>
 				<button type="submit" class="button right">Send</button>
 			</form>
 		</section>
-		<form
-			name="gridsome-contact"
-			method="post"
-			v-on:submit.prevent="handleSubmit"
-			action="/success/"
-			data-netlify="true"
-			data-netlify-honeypot="bot-field"
-		>
-			<input type="hidden" name="form-name" value="contact">
-			<p hidden>
-				<label>
-					Don’t fill this out:
-					<input name="bot-field">
-				</label>
-			</p>
-			<div class="sender-info">
-				<div>
-					<label for="name" class="label">Your name</label>
-					<input type="text" name="name" v-model="formData.name">
+		<section>
+			<form
+				name="gridsome-contact"
+				method="post"
+				v-on:submit.prevent="handleSubmit"
+				action="/success/"
+				data-netlify="true"
+				data-netlify-honeypot="bot-field"
+			>
+				<input type="hidden" name="form-name" value="contact">
+				<p hidden>
+					<label>
+						Don’t fill this out:
+						<input name="bot-field">
+					</label>
+				</p>
+				<div class="sender-info">
+					<div>
+						<label for="name" class="label">Your name</label>
+						<input type="text" name="name" v-model="formData.name">
+					</div>
+					<div>
+						<label for="email">Your email</label>
+						<input type="email" name="email" v-model="formData.email">
+					</div>
 				</div>
-				<div>
-					<label for="email">Your email</label>
-					<input type="email" name="email" v-model="formData.email">
+
+				<div class="message-wrapper">
+					<label for="message">Message</label>
+					<textarea name="message" v-model="formData.message"></textarea>
 				</div>
-			</div>
 
-			<div class="message-wrapper">
-				<label for="message">Message</label>
-				<textarea name="message" v-model="formData.message"></textarea>
-			</div>
-
-			<button type="submit">Submit form</button>
-		</form>
+				<button type="submit">Submit form</button>
+			</form>
+		</section>
 	</Layout>
 </template>
 
