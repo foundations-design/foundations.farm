@@ -37,7 +37,7 @@
 				</div>
 			</form>
 		</section>
-		<!-- <section
+		<section
 			id="contact-form"
 			method="post"
 			v-on:submit.prevent="handleSubmit"
@@ -67,7 +67,7 @@
 				</div>
 				<button type="submit" class="button right">Send</button>
 			</form>
-		</section>-->
+		</section>
 		<section>
 			<form
 				name="gridsome-contact"
@@ -110,6 +110,37 @@
 export default {
 	metaInfo: {
 		title: "Hello, world!"
+	},
+	data() {
+		return {
+			formData: {}
+		};
+	},
+	methods: {
+		encode(data) {
+			return Object.keys(data)
+				.map(
+					key =>
+						encodeURIComponent(key) +
+						"=" +
+						encodeURIComponent(data[key])
+				)
+				.join("&");
+		},
+		handleSubmit(e) {
+			fetch("/", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/x-www-form-urlencoded"
+				},
+				body: this.encode({
+					"form-name": e.target.getAttribute("name"),
+					...this.formData
+				})
+			})
+				.then(() => this.$router.push("/success"))
+				.catch(error => alert(error));
+		}
 	}
 };
 </script>
