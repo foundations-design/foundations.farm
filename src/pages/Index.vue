@@ -37,7 +37,7 @@
 				</div>
 			</form>
 		</section>
-		<section
+		<!-- <section
 			id="contact-form"
 			method="post"
 			v-on:submit.prevent="handleSubmit"
@@ -67,7 +67,7 @@
 				</div>
 				<button type="submit" class="button right">Send</button>
 			</form>
-		</section>
+		</section>-->
 		<section>
 			<form
 				name="gridsome-contact"
