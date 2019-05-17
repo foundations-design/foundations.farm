@@ -37,7 +37,7 @@
 				</div>
 			</form>
 		</section>
-		<section id="contact-form" >
+		<section id="contact-form">
 			<h3>Got a Question?</h3>
 			<form name="index-contact-form" method="POST" data-netlify="true">
 				<div class="input">
@@ -59,7 +59,7 @@
 						<!-- <input type="text" class="input-large" placeholder="Nice to meet you!"> -->
 					</div>
 				</div>
-				<input type="submit" class="button right">
+				<button type="submit" class="button right">Send</button>
 			</form>
 		</section>
 	</Layout>
