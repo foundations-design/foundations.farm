@@ -37,9 +37,9 @@
 				</div>
 			</form>
 		</section>
-		<section id="contact-form" name="index-contact-form" method="POST" data-netlify="true">
+		<section id="contact-form" >
 			<h3>Got a Question?</h3>
-			<form>
+			<form name="index-contact-form" method="POST" data-netlify="true">
 				<div class="input">
 					<div class="form-field">
 						<p class="input-title">Name</p>
