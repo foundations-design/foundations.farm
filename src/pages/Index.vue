@@ -37,7 +37,14 @@
 				</div>
 			</form>
 		</section>
-		<section id="contact-form">
+		<section
+			id="contact-form"
+			method="post"
+			v-on:submit.prevent="handleSubmit"
+			action="/success/"
+			data-netlify="true"
+			data-netlify-honeypot="bot-field"
+		>
 			<h3>Got a Question?</h3>
 			<form name="index-contact-form" method="POST" data-netlify="true">
 				<div class="input">
@@ -62,7 +69,7 @@
 				<button type="submit" class="button right">Send</button>
 			</form>
 		</section>
-		<section id="test-form">
+		<!--<section id="test-form">
 			<form name="contact" method="POST" data-netlify="true">
 				<p>
 					<label>
@@ -95,7 +102,7 @@
 					<button type="submit">Send</button>
 				</p>
 			</form>
-		</section>
+		</section>-->
 	</Layout>
 </template>
 
