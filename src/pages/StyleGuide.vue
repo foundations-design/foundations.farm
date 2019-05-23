@@ -44,7 +44,7 @@
 	</div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 body {
 	display: grid;
 	grid-template-columns: 1fr 1200px 1fr;
