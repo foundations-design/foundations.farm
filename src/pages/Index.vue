@@ -35,7 +35,7 @@
 				name="email-form"
 				id="email-form"
 				method="post"
-				v-on:submit.prevent="handleSubmit"
+				v-on:submit.prevent="handleEmailSubmit"
 				action="/success/"
 				data-netlify="true"
 			>
@@ -45,7 +45,7 @@
 					type="email"
 					name="email"
 					placeholder="myemailaddress@somewhere.com"
-					v-model="emailFormData"
+					v-model="emailFormData.email"
 				>
 				<div>
 					<input type="submit" class="button">
@@ -58,7 +58,7 @@
 				name="contact-form"
 				id="contact-form"
 				method="post"
-				v-on:submit.prevent="handleSubmit"
+				v-on:submit.prevent="handleContactSubmit"
 				action="/success/"
 				data-netlify="true"
 				data-netlify-honeypot="bot-field"
@@ -124,7 +124,7 @@ export default {
 				)
 				.join("&");
 		},
-		handleSubmit(e) {
+		handleEmailSubmit(e) {
 			fetch("/", {
 				method: "POST",
 				headers: {
@@ -132,7 +132,21 @@ export default {
 				},
 				body: this.encode({
 					"form-name": e.target.getAttribute("name"),
-					...this.formData
+					...this.emailFormData
+				})
+			})
+				.then(() => this.$router.push("/success"))
+				.catch(error => alert(error));
+		},
+		handleContactSubmit(e) {
+			fetch("/", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/x-www-form-urlencoded"
+				},
+				body: this.encode({
+					"form-name": e.target.getAttribute("name"),
+					...this.contactFormData
 				})
 			})
 				.then(() => this.$router.push("/success"))
