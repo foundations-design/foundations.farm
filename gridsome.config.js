@@ -26,6 +26,12 @@ module.exports = {
                 typeName: 'BlogPost',
                 route: '/posts/:slug' //magic!
             }
+        },
+        {
+            use: '@gridsome/plugin-google-analytics',
+            options: {
+                id: 'UA-137984096-2'
+            }
         }
     ],
 
