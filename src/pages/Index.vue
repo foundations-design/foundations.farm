@@ -30,8 +30,16 @@
 		<section>
 			<h3>Want to get notified of our next harvest?</h3>
 			<p>We'll let you know when the next batch is ready for delivery!</p>
-			<form class="email-form">
-				<input type="email" placeholder="myemailaddress@somewhere.com">
+			<form
+				class="email-form"
+				name="email-form"
+				id="email-form"
+				method="post"
+				v-on:submit.prevent="handleSubmit"
+				action="/success/"
+				data-netlify="true"
+			>
+				<input type="email" name="email" placeholder="myemailaddress@somewhere.com">
 				<div>
 					<input type="submit" class="button">
 				</div>
