@@ -39,7 +39,14 @@
 				action="/success/"
 				data-netlify="true"
 			>
-				<input type="email" name="email" placeholder="myemailaddress@somewhere.com">
+				<input type="hidden" name="form-name" value="email-form">
+
+				<input
+					type="email"
+					name="email"
+					placeholder="myemailaddress@somewhere.com"
+					v-model="emailFormData"
+				>
 				<div>
 					<input type="submit" class="button">
 				</div>
@@ -61,7 +68,7 @@
 				<div class="input">
 					<div class="form-field">
 						<p class="input-title">Name</p>
-						<input type="text" name="name" placeholder="Earl Santos" v-model="formData.name">
+						<input type="text" name="name" placeholder="Earl Santos" v-model="contactFormData.name">
 					</div>
 					<div class="form-field">
 						<p class="input-title">Email</p>
@@ -69,16 +76,16 @@
 							type="text"
 							name="email"
 							placeholder="supercoolperson@email.com"
-							v-model="formData.email"
+							v-model="contactFormData.email"
 						>
 					</div>
 					<div class="form-field">
 						<p class="input-title">Phone (optional)</p>
-						<input type="text" name="phone" placeholder="(630) 444 4444" v-model="formData.phone">
+						<input type="text" name="phone" placeholder="(630) 444 4444" v-model="contactFormData.phone">
 					</div>
 					<div class="form-field">
 						<p class="input-title">Message</p>
-						<textarea rows="14" name="message" v-model="formData.message"></textarea>
+						<textarea rows="14" name="message" v-model="contactFormData.message"></textarea>
 					</div>
 				</div>
 
@@ -102,7 +109,8 @@ export default {
 	},
 	data() {
 		return {
-			formData: {}
+			contactFormData: {},
+			emailFormData: {}
 		};
 	},
 	methods: {
