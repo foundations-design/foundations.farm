@@ -6,7 +6,7 @@
 			<h3 class="banner">
 				Foundations is a local indoor farm that aims to
 				provide
-				<br>fresh and local nutrients to the Tri Cities area.
+				fresh and local nutrients to the Tri Cities area.
 			</h3>
 		</section>
 		<section>
@@ -161,6 +161,11 @@ p {
 	margin-bottom: $space-xl;
 }
 
+.banner {
+    max-width: 1100px;
+
+}
+
 .logo-full {
 	width: column-spans(5);
 	margin-bottom: $space-l;
@@ -175,9 +180,20 @@ section {
 	justify-content: space-between;
 	margin-bottom: $space-xxl;
 
+    
+    @include sm {
+        flex-direction: column;
+    }
+
 	.photo {
 		flex: 1 1 auto;
 		@include space-inline(5rem);
+
+        @include md {@include space-inline(3rem)}
+
+        @include sm {
+            margin: 0 $space-m
+        }
 
 		img {
 			margin-bottom: $space-l;
