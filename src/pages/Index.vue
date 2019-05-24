@@ -177,6 +177,7 @@ p {
 		}
 	}
 }
+
 section {
 	padding-top: $space-xxl;
 	padding-bottom: $space-xxl;

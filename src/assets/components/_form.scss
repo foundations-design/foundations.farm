@@ -26,7 +26,7 @@ form .input{
 
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: repeat(2, column-spans(6));
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
     align-items: end;
 
