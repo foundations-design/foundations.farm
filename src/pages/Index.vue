@@ -162,17 +162,28 @@ p {
 }
 
 .banner {
-    max-width: 1100px;
-
+	max-width: 1100px;
 }
 
 .logo-full {
 	width: column-spans(5);
 	margin-bottom: $space-l;
+
+	@include md {
+		width: 60%;
+
+		@include sm {
+			width: 100%;
+		}
+	}
 }
 section {
 	padding-top: $space-xxl;
 	padding-bottom: $space-xxl;
+
+	@include md {
+		padding: $space-xl 0;
+	}
 }
 
 .gal {
@@ -180,20 +191,25 @@ section {
 	justify-content: space-between;
 	margin-bottom: $space-xxl;
 
-    
-    @include sm {
-        flex-direction: column;
-    }
+	@include md {
+        margin-bottom: $space-m;
+
+		@include sm {
+			flex-direction: column;
+		}
+	}
 
 	.photo {
 		flex: 1 1 auto;
 		@include space-inline(5rem);
 
-        @include md {@include space-inline(3rem)}
+		@include md {
+			@include space-inline(3rem);
+		}
 
-        @include sm {
-            margin: 0 $space-m
-        }
+		@include sm {
+			margin: 0 $space-m;
+		}
 
 		img {
 			margin-bottom: $space-l;
