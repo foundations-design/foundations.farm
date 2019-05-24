@@ -9,19 +9,6 @@ input[type="text"], input[type="email"], textarea {
     width: column-spans(5);
 }
 
-#email-form {
-    @include sm {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-
-        input {
-            width: 100%;
-            @include space-stack($space-l);
-        }
-    }
-}
-
 form .input{
 
     display: grid;
@@ -64,5 +51,14 @@ form .input{
 
 .email-form {
     display: grid;
-    grid-template-columns: repeat(2, column-spans(6));
+    grid-template-columns: repeat(2, 1fr);
+
+    @include sm {
+        grid-template-columns: 100%;
+        
+        input {
+            @include space-stack($space-l);
+            width: 100%;
+        }
+    }
 }
