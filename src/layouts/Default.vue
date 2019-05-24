@@ -5,8 +5,8 @@
 				<g-link to="/">{{ $static.metaData.siteName }}</g-link>
 			</strong>-->
 			<nav class="nav">
-				<g-link class="nav__link" to="/">About Us</g-link>
-				<g-link class="nav__link" to="/our-crops">Our Crops</g-link>
+				<g-link class="nav__link" to="/coming-soon">About Us</g-link>
+				<g-link class="nav__link" to="/coming-soon">Our Crops</g-link>
 				<!-- <a href="#contact-form" class="button">Contact Us</a> -->
 				<g-link to="/#contact-form" class="button">Contact Us</g-link>
 			</nav>

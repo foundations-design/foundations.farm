@@ -25,7 +25,7 @@
 				</div>
 			</div>
 
-			<g-link class="button right">Learn More >></g-link>
+			<g-link class="button right" to="/coming-soon">Learn More >></g-link>
 		</section>
 		<section>
 			<h3>Want to get notified of our next harvest?</h3>
