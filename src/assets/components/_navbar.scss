@@ -10,6 +10,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        padding: $space-l 0 0;
         
         a {
             margin: 0;
@@ -20,5 +21,11 @@ nav {
             width: 150px;
             float: right;
         }
+    }
+}
+
+header {
+    @include sm {
+        margin: 0;
     }
 }

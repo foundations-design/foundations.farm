@@ -163,6 +163,10 @@ p {
 
 .banner {
 	max-width: 1100px;
+	@include sm {
+		font-size: 24px;
+		max-width: 90%;
+	}
 }
 
 .logo-full {
@@ -173,7 +177,7 @@ p {
 		width: 60%;
 
 		@include sm {
-			width: 100%;
+			width: 85%;
 		}
 	}
 }
@@ -193,7 +197,7 @@ section {
 	margin-bottom: $space-xxl;
 
 	@include md {
-        margin-bottom: $space-m;
+		margin-bottom: $space-m;
 
 		@include sm {
 			flex-direction: column;
