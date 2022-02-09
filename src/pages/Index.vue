@@ -1,5 +1,8 @@
 <template>
 	<Layout>
+		<section>
+		<p>This project has been retired. Please contact <a href="https://www.linkedin.com/in/earl-mangulabnan-5b0740109/" target="_blank">Earl</a> if you would like to purchase this website.</p>
+		</section>
 		<!-- Learn how to use images here: https://gridsome.org/docs/images -->
 		<section>
 			<g-image class="logo-full" src="~/assets/img/logo_full.png" width="600"/>
